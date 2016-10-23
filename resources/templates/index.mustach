@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FX it</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .rest-call{
+            font-family: monospace;
+        }
+        .rest-call strong{
+            color: #616161;
+            font-weight: bold;
+        }
+        .fat{
+            font-weight: bold;
+        }
+        .collapsible-body{
+            padding: 10px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .card .card-title{
+            font-weight: bold;
+        }
+        .collapsible-body{
+            background-color: #fafafa
+        }
+        .code{
+            padding: 10px;
+            font-family: monospace;
+            font-size: 12px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #ddd;
+            min-height: 150px;
+        }
+        .bottom-button{
+            position: absolute;
+            bottom: 5px;
+            right: 6px;
+        }
+        a.card-title{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+
+
+<a href="https://github.com/modfin/fxit"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+
+<div class="container">
+    <h1 class="header center text-darken-2 grey-text">
+        <!--<i class="material-icons"-->
+                <!--style="-->
+                <!--font-size: 130px;-->
+                <!--position: relative;-->
+                <!--top: 40px;">-->
+            <!--euro_symbol-->
+        <!--</i>-->
+        <div style="vertical-align: middle">
+            <svg viewBox="0 0 708 708" style="width: 150px; height: 150px"
+                    >
+                <defs
+                        id="defs3338" />
+
+                <rect
+                        y="39.912594"
+                        x="41.32679"
+                        height="628.83636"
+                        width="627.42212"
+                        id="rect3344"
+                        style="fill:none;fill-opacity:0;fill-rule:evenodd;stroke:#616161;stroke-width:79.99982452;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                <g
+                        transform="matrix(0.88076847,0,0,1.0052534,68.646415,-1.8630809)"
+                        id="g4197">
+                    <path
+                            style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:80;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                            d="m 127,179 419,0 0,0 0,0 0,0"
+                            id="path4150" />
+                    <path
+                            style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:80;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                            d="m 127,529 419,0 0,0 0,0 0,0"
+                            id="path4150-3-6" />
+                    <path
+                            style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:80;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                            d="m 167,138 0,424 0,0 0,0 0,0"
+                            id="path4150-7" />
+                    <path
+                            style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:60;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                            d="m 56,412 375,0 0,0 0,0 0,0"
+                            id="path4150-5-3" />
+                    <path
+                            style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:60;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                            d="m 56,300 375,0 0,0 0,0 0,0"
+                            id="path4150-5-3-5" />
+                </g>
+            </svg>
+       fxit / fx.modfin.se</div>
+    </h1>
+
+    <div class="row center">
+        <h5 class="header col s12 light">
+            A free JSON API for FX exchange rates and operation
+        </h5>
+        <h6>(free as in "free speech" and also as in "free beer")</h6>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col s12 m10 offset-m1 l8 offset-l2">
+        <div class="card grey lighten-3">
+            <div class="card-stacked">
+                <div class="card-content black-text">
+                    <span class="card-title text-darken-2 grey-text">info</span>
+                    <div class="code z-depth-1" style="min-height: 0">
+                        <p>
+                            fx.modfin.se api provides current and historical foreign exchange rates
+                        </p>
+
+                        <p>
+                            The rates are updated daily around 16.00 when European Central Bank does so
+                        </p>
+
+                        <p>
+                            The api is provided by <a target="_blank" href="https://www.modularfinance.se">
+                            www.modularfinance.se
+                        </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s12 m10 offset-m1 l8 offset-l2">
+        <div class="card  grey lighten-3">
+            <div class="card-content black-text">
+                <span class="card-title text-darken-2 grey-text">endpoints</span>
+                <ul class="collapsible popout black-text" data-collapsible="accordion">
+                    <li class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">today</i>
+                            <strong>GET</strong> http://fx.modfin.se/latest
+                        </div>
+                        <div class="collapsible-body" id="latest" >
+
+                        </div>
+                    </li>
+                    <li  class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">history</i>
+                            <strong>GET</strong> http://fx.modfin.se/2010-01-01
+                        </div>
+                        <div class="collapsible-body" id="dated">
+                        </div>
+                    </li>
+                    <li  class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">date_range</i>
+                            <strong>GET</strong> http://fx.modfin.se/2010-01-01/2010-01-05
+                        </div>
+
+                        <div class="collapsible-body" id="dated-span">
+                        </div>
+                    </li>
+                    <li  class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">date_range</i>
+                            <strong>GET</strong> http://fx.modfin.se/2010-01-01/2011-01-01/agg
+                        </div>
+
+                        <div class="collapsible-body" id="dated-agg-span">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col s12 m10 offset-m1 l8 offset-l2">
+        <div class="card  grey lighten-3">
+            <div class="card-content black-text">
+                <span class="card-title text-darken-2 grey-text">modifiers</span>
+                <ul class="collapsible popout black-text" data-collapsible="accordion">
+                    <li class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">attach_money</i>
+                            <strong>GET</strong> http://fx.modfin.se/latest?<span class="fat">base=usd</span>
+                        </div>
+                        <div class="collapsible-body" id="latest-base">
+                        </div>
+                    </li>
+                    <li  class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">format_list_numbered</i>
+                            <strong>GET</strong> http://fx.modfin.se/2010-01-01/2010-01-05?<span class="fat">symbols=usd,sek</span>
+                        </div>
+                        <div class="collapsible-body" id="dated-symbol">
+                        </div>
+                    </li>
+                    <li  class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">functions</i>
+                            <strong>GET</strong> http://fx.modfin.se/2010-01-01/2011-01-01/agg?<span class="fat">func=</span>[avg,<span class="fat">max</span>,min]
+                        </div>
+                        <div class="collapsible-body" id="dated-agg-span-func">
+                        </div>
+                    </li>
+                    <li  class="white">
+                        <div class="collapsible-header rest-call">
+                            <i class="material-icons">keyboard_return</i>
+                            <strong>GET</strong> http://fx.modfin.se/latest?<span class="fat">callback=func</span>
+                        </div>
+                        <div class="collapsible-body" id="latest-callback">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col s12 m10 offset-m1 l4 offset-l2">
+        <div class="card grey lighten-3">
+            <div class="card-stacked">
+                <div class="card-content black-text">
+                    <a href="http://openexchangerates.github.io/money.js/" class="card-title text-darken-2 grey-text" >money.js</a>
+                    <div class="code z-depth-1">
+                        var usdToSek = function(data) { <br/>
+                        &nbsp;&nbsp;fx.rates = data.rates; <br/>
+                        &nbsp;&nbsp;var rate = fx(1).from("USD").to("SEK"); <br/>
+                        &nbsp;&nbsp;alert("$1 = " + rate.toFixed(2) + " SEK"); <br/>
+                        } <br/>
+                        <br/>
+                        $.get("http://fx.modfin.se/latest", usdToSek);
+                    </div>
+                    <a class="btn-floating btn-large waves-effect waves-light green bottom-button darken-2"
+                            onclick="moneyJs()">
+                        <i class="material-icons">play_arrow</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m10 l4 offset-m1">
+        <div class="card grey lighten-3 ">
+            <div class="card-stacked">
+                <div class="card-content black-text">
+                    <span class="card-title text-darken-2 grey-text" >misc</span>
+                    <div class="code z-depth-1">
+                        <ul>
+                            <li><a href="http://www.ecb.europa.eu/stats/exchange/eurofxref/html/index.en.html" target="_blank">ECB</a> data</li>
+                            <li>MIT license</li>
+                            <li>Source on <a href="https://github.com/modfin/fxit" target="_blank">Github</a></li>
+                            <li>Running on <a href="https://www.digitalocean.com/" target="_blank">Digital ocean</a></li>
+                            <li>
+                                The API is provided "AS IS", without warranty of any kind, express or implied.
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/money.js/0.2.0/money.min.js"></script>
+
+<script>
+
+    function moneyJs(){
+        var usdToSek = function(data) {
+            fx.rates = data.rates;
+            var rate = fx(1).from("USD").to("SEK");
+            alert("$1 = " + rate.toFixed(2) + " SEK") ;
+        }
+
+        $.get("/latest", usdToSek);
+    }
+
+    $(document).ready(function () {
+        $('.collapsible').collapsible({
+            accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
+
+    function codify(code){
+        return code.replace(/ /g,'&nbsp;').replace(/\n/g,'<br/>');
+    }
+
+    $.get("/latest", function(data){
+        var latest = JSON.stringify(data, undefined, 2);
+        $("#latest").append(codify(latest));
+
+        var callback = 'func(\n' + '  ' + latest.replace(/\n/g, '\n  ') + "\n);";
+        $("#latest-callback").append(codify(callback));
+
+    });
+    $.get("/2010-01-01", function(data){
+        var latest = JSON.stringify(data, undefined, 2);
+        $("#dated").append(codify(latest));
+    });
+
+    $.get("/2010-01-01/2010-01-05", function(data){
+        var latest = JSON.stringify(data, undefined, 2);
+        $("#dated-span").append(codify(latest));
+    });
+
+    $.get("/2010-01-01/2011-01-01/agg", function(data){
+        var latest = JSON.stringify(data, undefined, 2);
+        $("#dated-agg-span").append(codify(latest));
+    });
+
+    $.get("/latest?base=usd", function(data){
+        var latest = JSON.stringify(data, undefined, 2);
+
+        $("#latest-base").append(codify(latest));
+    });
+
+    $.get("/2010-01-01/2010-01-05?symbols=usd,sek", function(data){
+        var latest = JSON.stringify(data, undefined, 2);
+
+        $("#dated-symbol").append(codify(latest));
+    });
+
+    $.get("/2010-01-01/2011-01-01/agg?func=max", function(data){
+        var latest = JSON.stringify(data, undefined, 2);
+
+        $("#dated-agg-span-func").append(codify(latest));
+    });
+
+</script>
+</body>
+
+</html>

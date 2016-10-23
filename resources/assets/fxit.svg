@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg3336"
+   viewBox="0 0 708.66142 708.66141"
+   height="200mm"
+   width="200mm">
+  <defs
+     id="defs3338" />
+  <metadata
+     id="metadata3341">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     y="39.912594"
+     x="41.32679"
+     height="628.83636"
+     width="627.42212"
+     id="rect3344"
+     style="fill:none;fill-opacity:0;fill-rule:evenodd;stroke:#616161;stroke-width:79.99982452;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <g
+     transform="matrix(0.88076847,0,0,1.0052534,68.646415,-1.8630809)"
+     id="g4197">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:80;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 127.27922,148.63287 418.60722,0 0,1.41421 0,0 0,0"
+       id="path4150" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:80;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 126.97771,559.23945 418.60722,0 0,1.41421 0,0 0,0"
+       id="path4150-3-6" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:81.09590149;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 167.28278,108.78898 0,444.27005 -1.36928,0 0,0 0,0"
+       id="path4150-7" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:61.87487793;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 56.500089,412.55398 374.560581,0 0,0.94546 0,0 0,0"
+       id="path4150-5-3" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#616161;stroke-width:61.87487793;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 56.732399,299.59097 374.560651,0 0,0.94546 0,0 0,0"
+       id="path4150-5-3-5" />
+  </g>
+</svg>
