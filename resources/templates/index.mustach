@@ -266,7 +266,7 @@
                             <li>Source on <a href="https://github.com/modfin/fxit" target="_blank">Github</a></li>
                             <li>Running on <a href="https://www.digitalocean.com/" target="_blank">Digital ocean</a></li>
                             <li>
-                                The API is provided "AS IS", without warranty of any kind, express or implied.
+                                The API is provided "AS IS", without warranty of any kind, expressed or implied.
 
                             </li>
                         </ul>
@@ -351,3 +351,4 @@
 </body>
 
 </html>
+
