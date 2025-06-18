@@ -16,6 +16,7 @@
                  [clj-time "0.12.0"]
                  [funcool/promesa "1.4.0"]
                  [de.ubercode.clostache/clostache "1.4.0"]
+                 [javax.xml.bind/jaxb-api "2.2.12"]
                  ]
   :main fxit.core
   :aot [fxit.core])
